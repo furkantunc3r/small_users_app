@@ -7,8 +7,6 @@ app.use(express.urlencoded({
     extended: true
 }));
 
-console.log(process.env.DBUSER);
-
 app.use('/', usersRoute);
 
 const PORT = process.env.PORT || 3000;
